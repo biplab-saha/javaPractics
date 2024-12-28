@@ -1,22 +1,30 @@
+
+import java.util.Scanner;
+
 public class primeCheck {
-    
+
     public static void main(String[] args) {
-        int n =1;
-        if (n<=1){
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter the number to check prime or not prime: ");
+        int n = sc.nextInt();
+        sc.close();
+
+        if (n <= 1) {
             System.out.println("neither prime nor composite");
-        
+
         }
-        int c=2;
-        while(c*c<=n){
-            if(n%c==0){
+        int c = 2;
+        while (c * c <= n) {
+            if (n % c == 0) {
                 System.out.println("not prime number");
                 break;
             }
-            c+=1;
+            c += 1;
+            System.out.println("prime number");
 
         }
-        System.out.println("prime number");
+        
 
     }
-    
+
 }

@@ -22,3 +22,8 @@ Delete a remote branch
 git push origin --delete branch_name. You can also use the shorter command git push origin :branch_name. 
 Delete multiple branches
 Use git branch to list the branches you want to delete, then use grep to filter branches and xargs to batch-delete. For example, git branch | grep 'pattern' | xargs git branch -d. 
+
+
+
+Can you add multiple files in git add?
+(For multiple files, use git add . or git add -all)
