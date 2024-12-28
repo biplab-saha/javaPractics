@@ -15,3 +15,10 @@ Pushing commits: To share your commits with a remote repository (like GitHub), u
 
 
 
+To delete a branch in Git, you can use the following commands:
+Delete a local branch
+git branch -d branch_name. This will only delete a branch if it has been fully merged. If the branch has unmerged changes, you can use git branch -D branch_name to force delete it. 
+Delete a remote branch
+git push origin --delete branch_name. You can also use the shorter command git push origin :branch_name. 
+Delete multiple branches
+Use git branch to list the branches you want to delete, then use grep to filter branches and xargs to batch-delete. For example, git branch | grep 'pattern' | xargs git branch -d. 
