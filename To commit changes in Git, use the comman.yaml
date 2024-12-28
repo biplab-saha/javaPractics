@@ -1,0 +1,16 @@
+To commit changes in Git, use the command "git commit -m "your commit message"" after first adding the desired changes to the staging area using "git add" - this effectively saves a snapshot of your current project state with a descriptive message about the changes made. 
+Key points about committing in Git:
+"git add": This command stages the files you want to include in your next commit. 
+"git commit": This command creates a new commit with the staged changes and a commit message. 
+"-m "your commit message"": This option allows you to directly provide a commit message on the command line. 
+Example workflow:
+Make changes to your files: Edit the code in your project. 
+Stage changes: Run git add <file_name> to add specific files or git add . to add all changed files in the current directory. 
+Commit changes: Execute git commit -m "Descriptive commit message" to create a commit with your changes and message. 
+Important considerations:
+Descriptive commit messages: Always write clear and concise commit messages explaining what changes were made. 
+Amend the last commit: If you need to modify the most recent commit, use git commit --amend. 
+Pushing commits: To share your commits with a remote repository (like GitHub), use git push after committing. 
+
+
+
