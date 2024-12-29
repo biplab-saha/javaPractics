@@ -23,7 +23,6 @@ public class primeCheck {
             System.out.println("prime number");
 
         }
-        
 
     }
 
